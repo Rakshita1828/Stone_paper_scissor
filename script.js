@@ -83,7 +83,7 @@ function display()
 function playAgain()
 {
     //open index1.html
-    window.location.href="index1.html";
+    window.location.href="index.html";
 
 }
 
