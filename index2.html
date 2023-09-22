@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="winner.css">
+    <link rel="stylesheet" href="rules.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="page2">
+        <div class="scoreBoard2">
+            
+            <div class="gameName">ROCK <br/>PAPER<br/>SCISSORS</div>
+            <div class="score">
+                <div><span class="name">COMPUTER<br/>SCORE</span><br/><span class="compScore number">0</span></div>
+                <div><span class="name">YOUR<br/>SCORE</span><br/><span class="yourScore number">0</span></div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="winner">
+                <div class="winnerText text">YOU PICKED</div>
+                <button id="winnerImage"></button>
+            </div>
+            <div class="playAgain"><div class="textWin">YOU WIN<br/>AGAINST PC</div><button  class="playAgain1" onclick="playAgain()">PLAY AGAIN</button></div>
+            <div class="pcPicked">
+                <div class="loserText text">PC PICKED</div>
+                <button id="loserImage"></button>
+            </div>
+
+        </div>
+        <div class="modal">
+            <button class="cross" onclick="Close()">X</button>
+            <div class="card">
+                <div class="heading">Game Rules</div><br/>
+                <div class="bullet">Rock beats scissors, scissors beat paper, and paper beats rock.</div><br/>
+                <div class="bullet">Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</div><br/>
+                <div class="bullet">Use rock, paper, scissors to settle minor decisions or simply play to pass the time</div><br/>
+                <div class="bullet">If both players lay down the same hand, each player lays down another hand</div><br/>
+            </div>
+    
+        </div>
+        <div class="Grules">
+            <button class="rules" onclick="openModal()">RULES</button>
+            <button class="rules" onclick="display()">NEXT</button>
+        </div>
+        
+
+    </div>
+    
+    <script src="script.js"></script>
+    <script>
+        
+        document.querySelector(".yourScore").textContent = score1.yourSc;
+        document.querySelector(".compScore").textContent = score1.compSc;
+
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+
+        var userValue = getUrlParameter('user');
+        var compValue = getUrlParameter('comp');
+
+        // Create image elements for user and comp
+        var userImage = document.createElement('img');
+        userImage.alt = 'User';
+        userImage.src = userValue + '.png'; // Assumes image filenames are based on user value
+        var compImage = document.createElement('img');
+        compImage.alt = 'Computer';
+        compImage.src = compValue + '.png'; // Assumes image filenames are based on comp value
+
+        var userImageDiv = document.getElementById('winnerImage');
+        var compImageDiv = document.getElementById('loserImage');
+        userImageDiv.appendChild(userImage);
+        compImageDiv.appendChild(compImage);
+
+        
+    </script>
+</body>
+</html>

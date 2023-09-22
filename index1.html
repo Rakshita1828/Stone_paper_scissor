@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rules.css">
+
+</head>
+<body>
+    <div class="page1">
+        <div class="scoreBoard">
+            <div class="gameName">ROCK <br/>PAPER<br/>SCISSORS</div>
+            <div class="score">
+                <div><span class="name">COMPUTER<br/>SCORE</span><br/><span class="compScore number">0</span></div>
+                <div><span class="name">YOUR<br/>SCORE</span><br/><span class="yourScore number">0</span></div>
+            </div>
+        </div>
+        
+            <div class="symbols">
+                <div class="upperTriang">
+                    <button class="stone triangle" onclick="Play('stone')" value="stone">
+                        <img src="STONE.png" alt="">
+                    </button>
+                    <div class="line1 line">
+                        <img src="Line 1.png" alt="">
+                    </div>
+                    <button class="scissors triangle" onclick="Play('scissors')" value="scissors">
+                        <img src="SCISSORS.png" alt="">
+                    </button>
+                </div>
+                <div class="middleTriang">
+                    <div class="line2 line"><img src="Line 3.png" alt=""></div>
+                    <div class="line3 line"><img src="Line 2.png" alt=""></div>
+                </div>
+                <div class="lowerTriang">
+                    <button class="paper triangle" onclick="Play('paper')" value="paper">
+                        <img src="PAPER.png" alt="">
+                    </button>
+                </div>
+                
+               
+             </div>
+    
+             
+        
+            
+        
+        <div class="modal">
+            <button class="cross" onclick="Close()">X</button>
+            <div class="card">
+                <div class="heading">Game Rules</div><br/>
+                <div class="bullet">Rock beats scissors, scissors beat paper, and paper beats rock.</div><br/>
+                <div class="bullet">Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</div><br/>
+                <div class="bullet">Use rock, paper, scissors to settle minor decisions or simply play to pass the time</div><br/>
+                <div class="bullet">If both players lay down the same hand, each player lays down another hand</div><br/>
+            </div>
+    
+        </div>
+        <div class="Grules">
+            <button class="rules" onclick="openModal()">RULES</button>
+        </div>
+        
+    </div>
+
+    
+    <script src="script.js"></script>
+    <script>
+        document.querySelector(".yourScore").textContent = score1.yourSc;
+        document.querySelector(".compScore").textContent = score1.compSc;
+
+       /* function openModal()
+        {
+            var modal1=document.querySelector(".modal")
+            modal1.style.display='block';
+        }
+        */
+    </script>
+</body>
+</html>

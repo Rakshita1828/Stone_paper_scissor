@@ -1,0 +1,159 @@
+.page3
+{
+    display:flex;
+    flex-direction: column;
+}
+
+.scoreBoard
+{
+    border-radius: 13px;
+    border: 2px solid #FFF;
+    background: rgba(28, 48, 120, 0.00);
+    display: flex;
+    justify-content: space-between;
+    margin:40px;
+    padding: 3px;
+}
+
+body
+{
+    background: #8CC461;
+}
+
+.score
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.score div
+{
+    margin:2px;
+    font-size: 10px;
+    border-radius: 9px;
+    background: #FFF;
+    text-align: center;
+    margin: 7px;
+    padding: 7px;
+    width: 80px;
+    padding-top: 25px;
+}
+.number
+{
+    color: #252525;
+text-align: center;
+font-family: Roboto;
+font-size: 45px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.name
+{
+    color: #656565;
+font-family: Roboto;
+font-size: 10px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 1.7px;
+}
+
+.gameName
+{
+    color: #FFF;
+font-family: Roboto;
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 4px;
+
+}
+
+.middle
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text
+{
+    color: #FFF;
+    font-size: 14px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.7px;
+}
+
+
+#winnerImage
+{
+    background-color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    width:120px;
+    height: 120px;
+    border:6px solid #0074B6;
+    margin-top: 20px;
+
+}
+
+#loserImage
+{
+    background-color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    width:120px;
+    height: 120px;
+    border:6px solid darkgoldenrod;
+    margin-top: 20px;
+    
+
+}
+
+.textWin
+{
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 23px;
+}
+
+.playAgain1
+{
+    font-family: Roboto;
+font-size: 21px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 2.1px;
+border:2px solid #FFF;
+border-radius: 10px;
+background-color: #FFF;
+margin-top: 10px;
+}
+
+
+.Grules
+{
+    text-align: right;
+    position:absolute;
+    bottom: 7px;
+    right: 7px;
+
+}
+
+.rules
+{
+    background-color: #8CC461;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    color: white;
+    font-size: 17px;
+    margin:7px;
+}

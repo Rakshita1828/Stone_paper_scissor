@@ -1,0 +1,58 @@
+.cross
+{
+    color: white;
+    background-color: #F00;
+    border: 3px solid white;
+    border-radius: 50%;
+    width:5%;
+    height: 7%;
+    text-align: center;
+    font-size: 15px;
+    
+    margin-left: 46%;
+    margin-bottom:-2%;
+    z-index: 1;
+    padding: 0px;
+    position: relative;
+    float: right;
+}
+
+.card
+{
+    border-radius: 13px;
+    border: 7px solid #FFF;
+    background: #004429;
+    height:auto;
+    color: white;
+    width: 40%;;
+    padding: 25px;
+    font-size:10px ;
+    float: right;
+}
+
+.bullet::before
+{
+    content: "";
+    display: inline-block;
+    width: 10px; /* Adjust the width as needed */
+    height: 10px; /* Adjust the height as needed */
+    background-color:#FFD600; /* Bullet color */
+    margin-right: 10px; /* Adjust the spacing between the bullet and the text */
+}
+
+.heading
+{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.modal
+{
+    width:60%;
+    position: absolute;
+    bottom:33px;
+    right:3px;
+    display: none;
+
+}
